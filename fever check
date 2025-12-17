@@ -1,0 +1,7 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        double temp = new Scanner(System.in).nextDouble();
+        System.out.println((temp > 100) ? "Fever" : "Normal");
+    }
+}
