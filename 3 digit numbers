@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int num = new Scanner(System.in).nextInt();
+        if (num >= 100 && num <= 999)
+            System.out.println("3-digit number");
+        else
+            System.out.println("Not a 3-digit number");
+    }
+}
