@@ -1,0 +1,8 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        char ch = new Scanner(System.in).next().charAt(0);
+        int ascii = (int) ch;
+        System.out.println((ascii % 2 == 0) ? "Even" : "Odd");
+    }
+}
