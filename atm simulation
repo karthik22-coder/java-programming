@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        double balance = 5000;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1. Check Balance\n2. Deposit\n3. Withdraw");
+        int choice = sc.nextInt();
+        switch(choice){
+            case 1: System.out.println("Balance: " + balance); break;
+            case 2:
+                System.out.print("Enter deposit: "); 
+                balance += sc.nextDouble(); 
+                System.out.println("Balance: " + balance); 
+                break;
+            case 3:
+                System.out.print("Enter withdrawal: "); 
+                double amt = sc.nextDouble();
+                if(amt <= balance) { balance -= amt; System.out.println("Balance: " + balance);}
+                else System.out.println("Insufficient Balance");
+                break;
+            default: System.out.println("Invalid Choice");
+        }
+    }
+}
