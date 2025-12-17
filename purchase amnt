@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        double amount = new Scanner(System.in).nextDouble();
+        double discount = 0;
+        if(amount >= 1000) discount = 0.2*amount;
+        else if(amount >= 500) discount = 0.1*amount;
+        System.out.println("Discount: ₹" + discount);
+        System.out.println("Final Amount: ₹" + (amount - discount));
+    }
+}
+
+
