@@ -1,0 +1,8 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int num = new Scanner(System.in).nextInt();
+        int firstDigit = num / 100;
+        System.out.println((firstDigit % 2 == 0) ? "Even" : "Odd");
+    }
+}
