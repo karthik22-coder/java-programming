@@ -1,0 +1,9 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int year = new Scanner(System.in).nextInt();
+        int firstTwo = year / 100;
+        int lastTwo = year % 100;
+        System.out.println((firstTwo == lastTwo) ? "Equal" : "Not Equal");
+    }
+}
