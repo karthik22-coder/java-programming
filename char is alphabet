@@ -1,0 +1,7 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        char ch = new Scanner(System.in).next().charAt(0);
+        System.out.println(Character.isLetter(ch) ? "Alphabet" : "Not an alphabet");
+    }
+}
