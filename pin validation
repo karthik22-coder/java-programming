@@ -1,0 +1,9 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int storedPin = 1234;
+        int enteredPin = new Scanner(System.in).nextInt();
+        if(enteredPin == storedPin) System.out.println("PIN Correct. Access Granted");
+        else System.out.println("Incorrect PIN. Access Denied");
+    }
+}
