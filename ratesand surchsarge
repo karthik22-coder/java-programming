@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int units = new Scanner(System.in).nextInt();
+        double bill = 0;
+
+        if(units <= 100) bill = 0;
+        else if(units <= 300) bill = (units - 100) * 5;
+        else bill = (200 * 5) + (units - 300) * 10;
+
+        if(units > 500) bill *= 1.1; // 10% surcharge
+        System.out.println("Total Bill: ₹" + bill);
+    }
+}
