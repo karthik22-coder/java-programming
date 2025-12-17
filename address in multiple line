@@ -1,0 +1,6 @@
+public class Main {
+    public static void main(String[] args) {
+        // Print address using \n for new lines
+        System.out.println("Karthi Kumar\n123, MG Road\nChennai, Tamil Nadu\nIndia - 600001");
+    }
+}
