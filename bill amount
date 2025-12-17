@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        double bill = new Scanner(System.in).nextDouble();
+        double discount = 0;
+        if(bill >= 1000) discount = 0.1*bill;
+        else if(bill >= 500) discount = 0.05*bill;
+        System.out.println("Discount: " + discount);
+        System.out.println("Final Bill: " + (bill - discount));
+    }
+}
