@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int num = new Scanner(System.in).nextInt();
+        if (num >= 0 && num <= 9)
+            System.out.println("Single-digit");
+        else if (num >= 10 && num <= 99)
+            System.out.println("Two-digit");
+        else if (num >= 100 && num <= 999)
+            System.out.println("Three-digit");
+        else
+            System.out.println("More than three digits");
+    }
+}
