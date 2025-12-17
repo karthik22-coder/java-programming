@@ -1,0 +1,9 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(85);
+        System.out.println(78);
+        System.out.println(92);
+        System.out.println(88);
+        System.out.print(90);
+    }
+}
