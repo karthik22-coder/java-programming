@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        String day = new Scanner(System.in).next();
+        switch(day.toLowerCase()) {
+            case "monday": case "tuesday": case "wednesday": case "thursday": case "friday":
+                System.out.println("Weekday Price"); break;
+            case "saturday": case "sunday":
+                System.out.println("Weekend Price"); break;
+            default: System.out.println("Invalid Day");
+        }
+    }
+}
