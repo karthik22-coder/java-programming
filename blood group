@@ -1,0 +1,9 @@
+public class Main {
+    public static void main(String[] args) {
+        // Store your blood group in a variable
+        String bloodGroup = "O+"; // Replace with your actual blood group
+
+        // Print the blood group
+        System.out.println("My blood group is: " + bloodGroup);
+    }
+}
