@@ -1,0 +1,7 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        String mobile = new Scanner(System.in).next();
+        System.out.println((mobile.length() == 10 && mobile.matches("\\d+")) ? "Valid Number" : "Invalid Number");
+    }
+}
