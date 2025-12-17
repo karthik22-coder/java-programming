@@ -1,0 +1,8 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int num = new Scanner(System.in).nextInt();
+        int lastDigit = num % 10;
+        System.out.println((lastDigit % 3 == 0) ? "Divisible by 3" : "Not divisible by 3");
+    }
+}
